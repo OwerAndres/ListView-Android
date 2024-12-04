@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- LinearLayout principal, horizontal -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!-- ImageView con imagen -->
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_foreground" /> <!-- Asegúrate de tener el icono de la app en la carpeta drawable -->
+
+        <!-- LinearLayout con RadioButton -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/boton"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" /> <!-- Cambia el texto según lo necesites -->
+
+        </LinearLayout>
+
+        <!-- Segundo LinearLayout con dos TextViews -->
+        <LinearLayout
+            android:layout_width="193dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/texto_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Título"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/texto_datos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Datos"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
